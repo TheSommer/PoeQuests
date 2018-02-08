@@ -14,7 +14,7 @@ What things you need to install the software and how to install them
 PHP 7.0.x
 Composer
 Git
-SQLite
+PHP SQLite extension (Required for example, generally optional)
 ```
 
 ### Installing
