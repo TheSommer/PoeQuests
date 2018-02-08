@@ -18,6 +18,11 @@ Route::get('/', function () {
 //All characters
 Route::get('characters', "CharacterController@index");
 
+Route::get('items', function(){
+  $items = App\Item::all();
+  return view('items.index', compact('items'));
+});
+
 //Single character
 Route::get('characters/{name}', "CharacterController@show");
 
