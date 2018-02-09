@@ -51,9 +51,10 @@ DB_DATABASE={absolute path to database.sqlite}
 
 ```
 
-Run included migrations and seeders
+Generate application key and run included migrations and seeders
 
 ```
+> php artisan key:generate
 > php artisan migrate:refresh --seed
 ```
 
