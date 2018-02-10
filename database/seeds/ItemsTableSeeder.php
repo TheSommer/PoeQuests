@@ -118,6 +118,74 @@ class ItemsTableSeeder extends Seeder
       $this->createItem('Vulnerability', 24, 58, 0, 0, ["Curse", "Spell", "AoE", "Duration"]);
       $this->createItem('Warlord\'s Mark', 24, 58, 0, 0, ["Curse", "Spell", "AoE", "Duration"]);
 
+      /**
+      * Intelligence Skill Gems as listed on /Skill_gem
+      */
+      $this->createItem('Arc', 12, 0, 33, 0, ["Spell", "Chaining", "Lightning"]);
+      $this->createItem('Arctic Breath', 28, 0, 42, 29, ["Projectile", "Spell", "Duration", "AoE", "Cold"]);
+      $this->createItem('Assassin\'s Mark', 24, 0, 37, 25, ["Curse", "Spell", "AoE", "Duration"]);
+      $this->createItem('Ball Lightning', 28, 0, 67, 0, ["Projectile", "Spell", "AoE", "Lightning"]);
+      $this->createItem('Blight', 1, 0, 0, 0, ["Spell", "Chaos", "AoE", "Channelling", "Duration"]);
+      $this->createItem('Bodyswap', 10, 0, 18, 0, ["Movement", "Spell", "AoE", "Fire"]);
+      $this->createItem('Bone Offering', 12, 0, 33, 0, ["Minion", "Spell", "Duration"]);
+      $this->createItem('Clarity', 10, 0, 29, 0, ["Aura", "Spell", "AoE"]);
+      $this->createItem('Cold Snap', 4, 0, 16, 0, ["Spell", "AoE", "Cold"]);
+      $this->createItem('Conductivity', 24, 0, 58, 0, ["Curse", "Spell", "AoE", "Duration", "Lightning"]);
+      $this->createItem('Contagion', 4, 0, 0, 0, ["Spell", "AoE", "Duration", "Chaos"]);
+      $this->createItem('Conversion Trap', 4, 0, 0, 0, ["Trap", "Spell", "Duration"]);
+      $this->createItem('Convocation', 24, 0, 58, 0, ["Minion", "Spell", "Duration"]);
+      $this->createItem('Dark Pact', 28, 0, 67, 0, ["Minion", "Spell", "AoE", "Chaining", "Chaos"]);
+      $this->createItem('Despair', 24, 0, 58, 0, ["Curse", "Spell", "AoE", "Duration", "Chaos"]);
+      $this->createItem('Discharge', 28, 0, 67, 0, ["Spell", "AoE", "Fire", "Cold", "Lightning"]);
+      $this->createItem('Discipline', 24, 0, 58, 0, ["Aura", "Spell", "AoE"]);
+      $this->createItem('Elemental Weakness', 24, 0, 58, 0, ["Curse", "Spell", "AoE", "Duration"]);
+      $this->createItem('Enfeeble', 24, 0, 58, 0, ["Curse", "Spell", "AoE", "Duration"]);
+      $this->createItem('Essence Drain', 12, 0, 21, 14, ["Projectile", "Spell", "Duration", "Chaos"]);
+      $this->createItem('Fire Nova Mine', 12, 0, 33, 0, ["AoE", "Mine", "Spell", "Fire", "Duration"]);
+      $this->createItem('Fireball', 1, 0, 0, 0, ["Projectile", "Spell", "AoE", "Fire"]);
+      $this->createItem('Firestorm', 12, 0, 33, 0, ["Spell", "AoE", "Duration", "Fire"]);
+      $this->createItem('Flame Dash', 10, 0, 29, 0, ["Spell", "Movement", "Duration", "Fire"]);
+      $this->createItem('Flame Surge', 12, 0, 33, 0, ["Spell", "AoE", "Fire"]);
+      $this->createItem('Flameblast', 28, 0, 67, 0, ["Spell", "AoE", "Fire", "Channelling"]);
+      $this->createItem('Flammability', 24, 25, 37, 0, ["Curse", "Spell", "AoE", "Duration", "Fire"]);
+      $this->createItem('Flesh Offering', 12, 0, 33, 0, ["Minion", "Spell", "Duration"]);
+      $this->createItem('Freezing Pulse', 1, 0, 0, 0, ["Projectile", "Spell", "Cold"]);
+      $this->createItem('Frost Bomb', 4, 0, 16, 0, ["Spell", "AoE", "Duration", "Cold"]);
+      $this->createItem('Frost Wall', 4, 0, 16, 0, ["Spell", "Duration", "Cold"]);
+      $this->createItem('Frostbite', 24, 0, 37, 25, ["Curse", "Spell", "AoE", "Duration", "Cold"]);
+      $this->createItem('Frostbolt', 1, 0, 0, 0, ["Projectile", "Spell", "Cold"]);
+      $this->createItem('Glacial Cascade', 28, 0, 67, 0, ["Spell", "AoE", "Cold"]);
+      $this->createItem('Herald of Thunder', 16, 0, 41, 0, ["Cast", "AoE", "Duration", "Lightning", "Herald"]);
+      $this->createItem('Ice Nova', 12, 0, 33, 0, ["Spell", "AoE", "Cold"]);
+      $this->createItem('Ice Spear', 12, 0, 33, 0, ["Projectile", "Spell", "Cold"]);
+      $this->createItem('Incinerate', 12, 0, 33, 0, ["Projectile", "Spell", "Fire", "Channelling"]);
+      $this->createItem('Kinetic Blast', 28, 0, 67, 0, ["Attack", "AoE", "Projectile"]);
+      $this->createItem('Lightning Tendrils', 1, 0, 0, 0, ["Spell", "AoE", "Lightning", "Channelling"]);
+      $this->createItem('Lightning Trap', 12, 0, 21, 14, ["Projectile", "Trap", "Spell", "Duration", "Lightning"]);
+      $this->createItem('Lightning Warp', 10, 0, 29, 0, ["Spell", "AoE", "Duration", "Movement", "Lightning"]);
+      $this->createItem('Magma Orb', 1, 0, 0, 0, ["Projectile", "Spell", "AoE", "Fire", "Chaining"]);
+      $this->createItem('Orb of Storms', 4, 0, 16, 0, ["Lightning", "Spell", "Duration", "AoE", "Chaining"]);
+      $this->createItem('Power Siphon', 12, 0, 33, 0, ["Attack", "Projectile"]);
+      $this->createItem('Purity of Elements', 24, 25, 37, 0, ["Aura", "Spell", "AoE"]);
+      $this->createItem('Purity of Lightning', 24, 0, 58, 0, ["Aura", "Spell", "AoE", "Lightning"]);
+      $this->createItem('Raise Spectre', 28, 0, 67, 0, ["Spell", "Minion"]);
+      $this->createItem('Raise Zombie', 1, 0, 0, 0, ["Spell", "Minion"]);
+      $this->createItem('Righteous Fire', 16, 18, 26, 0, ["Spell", "AoE", "Fire"]);
+      $this->createItem('Scorching Ray', 12, 0, 33, 0, ["Spell", "Fire", "Duration", "Channelling"]);
+      $this->createItem('Shock Nova', 28, 0, 67, 0, ["Spell", "AoE", "Lightning"]);
+      $this->createItem('Spark', 1, 0, 0, 0, ["Projectile", "Spell", "Duration", "Lightning"]);
+      $this->createItem('Spirit Offering', 12, 0, 33, 0, ["Minion", "Spell", "Duration"]);
+      $this->createItem('Storm Burst', 28, 0, 67, 0, ["Projectile", "AoE", "Spell", "Lightning", "Channelling"]);
+      $this->createItem('Storm Call', 12, 0, 33, 0, ["Spell", "AoE", "Duration", "Lightning"]);
+      $this->createItem('Summon Chaos Golem', 34, 0, 79, 0, ["Chaos", "Minion", "Spell", "Golem"]);
+      $this->createItem('Summon Lightning Golem', 34, 0, 50, 35, ["Lightning", "Minion", "Spell", "Golem"]);
+      $this->createItem('Summon Raging Spirit', 4, 0, 16, 0, ["Spell", "Minion", "Duration", "Fire"]);
+      $this->createItem('Summon Skeleton', 10, 0, 29, 0, ["Spell", "Minion", "Duration"]);
+      $this->createItem('Tempest Shield', 16, 18, 26, 0, ["Spell", "Lightning", "Chaining", "Duration"]);
+      $this->createItem('Vortex', 28, 0, 67, 0, ["Spell", "AoE", "Cold", "Duration"]);
+      $this->createItem('Wither', 10, 0, 29, 0, ["Spell", "AoE", "Duration", "Chaos", "Channelling"]);
+      $this->createItem('Wrath', 24, 0, 58, 0, ["Aura", "Spell", "AoE", "Lightning"]);
+
     }
 
     public function createItem($name, $req_level, $req_str, $req_int, $req_dex, $str_tags){
