@@ -74,6 +74,16 @@ class ItemsTableSeeder extends Seeder
       $this->createItem('Volatile Dead', 12, 0, 14, 21, ["Spell", "AoE", "Fire"]);
       $this->createItem('Whirling Blades', 10, 0, 0, 18, ["Attack", "Movement", "Melee"]);
       $this->createItem('Wild Strike', 10, 0, 0, 18, ["Projectile", "Attack", "Melee", "Lightning", "Cold", "Fire", "AoE", "Chaining"]);
+
+      /**
+      * Strength Skill Gems as listed on /Skill_gem
+      */
+      $this->createItem('Abyssal Cry', 34, 79, 0, 0, ["Warcry", "AoE", "Duration", "Chaos"]);
+      $this->createItem('Ancestral Protector', 4, 16, 0, 0, ["Totem", "Attack", "Duration", "Melee"]);
+      $this->createItem('Ancestral Warchief', 28, 67, 0, 0, ["Totem", "Attack", "Duration", "AoE", "Melee"]);
+      $this->createItem('Anger', 24, 37, 25, 0, ["Aura", "Spell", "AoE", "Fire"]);
+      $this->createItem('Animate Guardian', 28, 42, 29, 0, ["Spell", "Minion"]);
+      $this->createItem('Cleave', 1, 0, 0, 0, ["Attack", "AoE", "Melee"]);
     }
 
     public function createItem($name, $req_level, $req_str, $req_int, $req_dex, $str_tags){
