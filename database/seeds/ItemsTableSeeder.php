@@ -84,6 +84,40 @@ class ItemsTableSeeder extends Seeder
       $this->createItem('Anger', 24, 37, 25, 0, ["Aura", "Spell", "AoE", "Fire"]);
       $this->createItem('Animate Guardian', 28, 42, 29, 0, ["Spell", "Minion"]);
       $this->createItem('Cleave', 1, 0, 0, 0, ["Attack", "AoE", "Melee"]);
+      $this->createItem('Decoy Totem', 4, 16, 0, 0, ["Totem", "Spell", "Duration", "AoE"]);
+      $this->createItem('Determination', 24, 58, 0, 0, ["Aura", "Spell", "AoE"]);
+      $this->createItem('Devouring Totem', 4, 16, 0, 0, ["Totem", "Spell", "Duration"]);
+      $this->createItem('Dominating Blow', 28, 42, 29, 0, ["Attack", "Minion", "Duration", "Melee"]);
+      $this->createItem('Earthquake', 28, 67, 0, 0, ["Attack", "AoE", "Duration", "Melee"]);
+      $this->createItem('Enduring Cry', 16, 41, 0, 0, ["Warcry", "AoE", "Duration"]);
+      $this->createItem('Flame Totem', 4, 0, 0, 0, ["Projectile", "Totem", "Spell", "Duration", "Fire"]);
+      $this->createItem('Glacial Hammer', 1, 0, 0, 0, ["Attack", "Melee", "Cold"]);
+      $this->createItem('Ground Slam', 1, 0, 0, 0, ["Attack", "AoE", "Melee"]);
+      $this->createItem('Heavy Strike', 1, 0, 0, 0, ["Attack", "Melee"]);
+      $this->createItem('Herald of Ash', 16, 26, 18, 0, ["Spell", "AoE", "Fire", "Herald", "Duration"]);
+      $this->createItem('Ice Crash', 28, 42, 29, 0, ["Attack", "AoE", "Cold", "Melee"]);
+      $this->createItem('Immortal Call', 34, 79, 0, 0, ["Spell", "Duration"]);
+      $this->createItem('Infernal Blow', 1, 0, 0, 0, ["Attack", "AoE", "Melee", "Fire"]);
+      $this->createItem('Leap Slam', 10, 29, 0, 0, ["Attack", "AoE", "Movement", "Melee"]);
+      $this->createItem('Molten Shell', 4, 16, 0, 0, ["Spell", "AoE", "Duration", "Fire"]);
+      $this->createItem('Molten Strike', 1, 0, 0, 0, ["Projectile", "Attack", "AoE", "Melee", "Fire"]);
+      $this->createItem('Punishment', 24, 37, 25, 0, ["Curse", "Spell", "AoE", "Duration"]);
+      $this->createItem('Purity of Fire', 24, 37, 25, 0, ["Aura", "Spell", "AoE", "Fire"]);
+      $this->createItem('Rallying Cry', 10, 29, 0, 0, ["Warcry", "AoE", "Duration"]);
+      $this->createItem('Reckoning', 1, 4, 16, 0, ["Trigger", "Attack", "AoE", "Melee"]);
+      $this->createItem('Rejuvination Totem', 4, 16, 0, 0, ["Totem", "Aura", "Spell", "AoE", "Duration"]);
+      $this->createItem('Searing Bond', 12, 21, 14, 0, ["Totem", "Spell", "Duration", "Fire"]);
+      $this->createItem('Shield Charge', 10, 29, 0, 0, ["Attack", "AoE", "Movement", "Melee"]);
+      $this->createItem('Shockwave Totem', 28, 67, 0, 0, ["Totem", "Spell", "AoE", "Duration"]);
+      $this->createItem('Summon Flame Golem', 34, 50, 35, 0, ["Fire", "Minion", "Spell", "Golem"]);
+      $this->createItem('Summon Stone Golem', 34, 50, 0, 35, ["Minion", "Spell", "Golem"]);
+      $this->createItem('Sunder', 12, 33, 0, 0, ["Attack", "AoE", "Melee"]);
+      $this->createItem('Sweep', 12, 33, 0, 0, ["Attack", "AoE", "Melee"]);
+      $this->createItem('Vigilant Strike', 4, 0, 0, 0, ["Attack", "Melee"]);
+      $this->createItem('Vitality', 24, 58, 0, 0, ["Aura", "Spell", "AoE"]);
+      $this->createItem('Vulnerability', 24, 58, 0, 0, ["Curse", "Spell", "AoE", "Duration"]);
+      $this->createItem('Warlord\'s Mark', 24, 58, 0, 0, ["Curse", "Spell", "AoE", "Duration"]);
+
     }
 
     public function createItem($name, $req_level, $req_str, $req_int, $req_dex, $str_tags){
