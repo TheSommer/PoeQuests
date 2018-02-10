@@ -14,13 +14,13 @@
       <td>
         <span class="badge badge-secondary">Lvl. {{ $item->req_level }}</span>
         @if($item->req_str > 0)
-          <span class="badge badge-danger">{{ $item->req_str }} str</span>
+          <span class="badge badge-danger">{{ $item->req_str }} Str</span>
         @endif
         @if($item->req_int > 0)
-          <span class="badge badge-primary">{{ $item->req_int }} int</span>
+          <span class="badge badge-primary">{{ $item->req_int }} Int</span>
         @endif
         @if($item->req_dex > 0)
-          <span class="badge badge-success">{{ $item->req_dex }} dex</span>
+          <span class="badge badge-success">{{ $item->req_dex }} Dex</span>
         @endif
       </td>
       <td>
