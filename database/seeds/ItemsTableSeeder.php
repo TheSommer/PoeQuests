@@ -186,6 +186,46 @@ class ItemsTableSeeder extends Seeder
       $this->createItem('Wither', 10, 0, 29, 0, ["Spell", "AoE", "Duration", "Chaos", "Channelling"]);
       $this->createItem('Wrath', 24, 0, 58, 0, ["Aura", "Spell", "AoE", "Lightning"]);
 
+      /**
+      * Dexterity Support Skill Gems as listed on /Skill_gem
+      */
+      $this->createItem('Added Cold Damage Support', 8, 0, 0, 18, ["Cold", "Support"]);
+      $this->createItem('Additional Accuracy Support', 8, 0, 0, 0, ["Attack", "Support"]);
+      $this->createItem('Blind Support', 8, 0, 0, 18, ["Support"]);
+      $this->createItem('Block Chance Reduction Support', 18, 0, 14, 21, ["Support"]);
+      $this->createItem('Cast On Critical Strike Support', 38, 0, 27, 40, ["Support", "Spell", "Trigger"]);
+      $this->createItem('Cast On Death Support', 38, 0, 27, 40, ["Support", "Spell", "Trigger"]);
+      $this->createItem('Chain Support', 38, 0, 0, 63, ["Support", "Chaining", "Projectile"]);
+      $this->createItem('Chance to Flee Support', 8, 0, 0, 0, ["Support"]);
+      $this->createItem('Cluster Traps Support', 38, 0, 0, 63, ["Trap", "Support"]);
+      $this->createItem('Cold Penetration Support', 31, 0, 0, 52, ["Cold", "Support"]);
+      $this->createItem('Culling Strike Support', 18, 0, 0, 33, ["Support"]);
+      $this->createItem('Deadly Ailments Support', 18, 0, 14, 21, ["Support"]);
+      $this->createItem('Enhance Support', 1, 0, 0, 0, ["Support"]);
+      $this->createItem('Faster Attacks Support', 18, 0, 0, 33, ["Attack", "Support"]);
+      $this->createItem('Faster Projectiles Support', 31, 0, 0, 52, ["Support", "Projectile"]);
+      $this->createItem('Fork Support', 31, 0, 0, 52, ["Support", "Projectile"]);
+      $this->createItem('Greater Multiple Projectiles Support', 38, 0, 0, 63, ["Support", "Projectile"]);
+      $this->createItem('Hypothermia Support', 31, 0, 0, 52, ["Cold", "Support"]);
+      $this->createItem('Ice Bite Support', 31, 0, 0, 52, ["Cold", "Support"]);
+      $this->createItem('Lesser Multiple Projectiles Support', 8, 0, 0, 18, ["Support", "Projectile"]);
+      $this->createItem('Lesser Poison Support', 1, 0, 0, 0, ["Chaos", "Support"]);
+      $this->createItem('Mana Leech Support', 31, 0, 0, 52, ["Support"]);
+      $this->createItem('Mirage Archer Support', 4, 0, 0, 0, ["Bow", "Attack", "Support", "Duration"]);
+      $this->createItem('Multiple Traps Support', 8, 0, 0, 0, ["Support", "Trap"]);
+      $this->createItem('Onslaught Support', 1, 0, 0, 0, ["Support"]);
+      $this->createItem('Physical Projectile Attack Damage Support', 18, 0, 0, 33, ["Projectile", "Attack", "Support"]);
+      $this->createItem('Pierce Support', 1, 0, 0, 0, ["Support", "Projectile"]);
+      $this->createItem('Point Blank Support', 18, 0, 0, 33, ["Projectile", "Attack", "Support"]);
+      $this->createItem('Poison Support', 31, 0, 0, 52, ["Chaos", "Support"]);
+      $this->createItem('Slower Projectiles Support', 31, 0, 0, 52, ["Support", "Projectile"]);
+      $this->createItem('Swift Affliction Support', 31, 0, 0, 52, ["Support", "Duration"]);
+      $this->createItem('Trap and Mine Damage Support', 18, 0, 14, 21, ["Support", "Trap", "Mine"]);
+      $this->createItem('Trap Cooldown Support', 31, 0, 0, 52, ["Trap", "Support"]);
+      $this->createItem('Trap Support', 8, 0, 0, 0, ["Support", "Trap", "Duration"]);
+      $this->createItem('Vile Toxins Support', 38, 0, 0, 63, ["Support"]);
+      $this->createItem('Void Manipulation Support', 8, 0, 0, 0, ["Chaos", "Support"]);
+      $this->createItem('Volley Support', 4, 0, 0, 0, ["Support", "Projectile"]);
     }
 
     public function createItem($name, $req_level, $req_str, $req_int, $req_dex, $str_tags){
@@ -198,7 +238,7 @@ class ItemsTableSeeder extends Seeder
         $item->req_int = $req_int;
         $item->req_dex = $req_dex;
         $item->save();
-        echo('Added #' . $item->id . " - " . $item->name . "\n");
+        echo('Added Item #' . $item->id . " - " . $item->name . "\n");
 
         foreach($str_tags as $str_tag){
           $existingTag = Tag::where('name', 'like', $str_tag)->first();
@@ -206,6 +246,7 @@ class ItemsTableSeeder extends Seeder
             $tag = new Tag();
             $tag->name = $str_tag;
             $tag->save();
+            echo('Added Tag #' . $tag->id . " - " . $tag->name . "\n");
 
             $itemtag = new ItemTag();
             $itemtag->item_id = $item->id;
