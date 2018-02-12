@@ -226,6 +226,87 @@ class ItemsTableSeeder extends Seeder
       $this->createItem('Vile Toxins Support', 38, 0, 0, 63, ["Support"]);
       $this->createItem('Void Manipulation Support', 8, 0, 0, 0, ["Chaos", "Support"]);
       $this->createItem('Volley Support', 4, 0, 0, 0, ["Support", "Projectile"]);
+
+      /**
+      * Strength Support Skill Gems as listed on /Skill_gem
+      */
+      $this->createItem('Added Fire Damage Support', 8, 18, 0, 0, ["Fire", "Support"]);
+      $this->createItem('Ancestral Call Support', 4, 0, 0, 0, ["Support", "Melee", "Attack"]);
+      $this->createItem('Blood Magic Support', 31, 52, 0, 0, ["Support"]);
+      $this->createItem('Bloodlust Support', 18, 33, 0, 0, ["Attack", "Support", "Melee"]);
+      $this->createItem('Brutality Support', 38, 63, 0, 0, ["Support"]);
+      $this->createItem('Burning Damage Support', 31, 33, 0, 0, ["Fire", "Support"]);
+      $this->createItem('Cast on Melee Kill Support', 38, 40, 27, 0, ["Support", "Melee", "Attack", "Spell", "Trigger"]);
+      $this->createItem('Cast when Damage Taken Support', 38, 40, 27, 0, ["Support", "Spell", "Trigger"]);
+      $this->createItem('Chance to Bleed Support', 1, 0, 0, 0, ["Attack", "Support"]);
+      $this->createItem('Cold to Fire Support', 18, 21, 14, 0, ["Cold", "Fire", "Support"]);
+      $this->createItem('Damage on Full Life Support', 18, 33, 0, 0, ["Attack", "Support"]);
+      $this->createItem('Elemental Damage with Attacks Support', 18, 21, 14, 0, ["Attack", "Support"]);
+      $this->createItem('Empower Support', 1, 0, 0, 0, ["Support"]);
+      $this->createItem('Endurance Charge on Melee Stun Support', 18, 33, 0, 0, ["Support", "Melee", "Attack"]);
+      $this->createItem('Fire Penetration Support', 31, 52, 0, 0, ["Fire", "Support"]);
+      $this->createItem('Fortify Support', 31, 52, 0, 0, ["Attack", "Support", "Melee"]);
+      $this->createItem('Generosity Support', 31, 33, 23, 0, ["Support", "Aura"]);
+      $this->createItem('Increased Duration Support', 31, 52, 0, 0, ["Support", "Duration"]);
+      $this->createItem('Iron Grip Support', 18, 33, 0, 0, ["Projectile", "Support"]);
+      $this->createItem('Iron Will Support', 18, 33, 0, 0, ["Spell", "Support"]);
+      $this->createItem('Knockback Support', 8, 18, 0, 0, ["Support"]);
+      $this->createItem('Less Duration Support', 31, 52, 0, 0, ["Support", "Duration"]);
+      $this->createItem('Life Gain on Hit Support', 8, 18, 0, 0, ["Attack", "Support"]);
+      $this->createItem('Life Leech Support', 31, 52, 0, 0, ["Support"]);
+      $this->createItem('Maim Support', 8, 18, 0, 0, ["Attack", "Support"]);
+      $this->createItem('Melee Physical Damage Support', 18, 33, 0, 0, ["Melee", "Support", "Attack"]);
+      $this->createItem('Melee Support', 8, 18, 0, 0, ["Support", "Melee", "Attack", "AoE"]);
+      $this->createItem('Multistrike Support', 38, 40, 0, 27, ["Attack", "Melee", "Support"]);
+      $this->createItem('Ranged Attack Totem Support', 8, 0, 0, 0, ["Bow", "Projectile", "Support", "Totem", "Attack", "Duration"]);
+      $this->createItem('Reduced Mana Support', 31, 52, 0, 0, ["Support"]);
+      $this->createItem('Ruthless Support', 1, 0, 0, 0, ["Support", "Melee", "Attack"]);
+      $this->createItem('Spell Totem Support', 8, 0, 0, 0, ["Support", "Totem", "Duration"]);
+      $this->createItem('Stun Support', 8, 18, 0, 0, ["Attack", "Support"]);
+
+      /**
+      * Intelligence Support Skill Gems as listed on /Skill_gem
+      */
+      $this->createItem('Added Chaos Damage Support', 31, 0, 52, 0, ["Chaos", "Support"]);
+      $this->createItem('Added Lightning Damage Support', 8, 0, 18, 0, ["Lightning", "Support"]);
+      $this->createItem('Arcane Surge Support', 1, 0, 0, 0, ["Support", "Spell", "Duration"]);
+      $this->createItem('Blasphemy Support', 31, 0, 52, 0, ["Support", "Curse", "Aura"]);
+      $this->createItem('Cast when Stunned Support', 38, 0, 40, 27, ["Support", "Spell", "Trigger"]);
+      $this->createItem('Cast while Channelling Support', 38, 0, 40, 27, ["Support", "Channelling", "Spell"]);
+      $this->createItem('Chance to Ignite Support', 8, 0, 18, 0, ["Fire", "Support"]);
+      $this->createItem('Concentrated Effect Support', 18, 0, 33, 0, ["Support", "AoE"]);
+      $this->createItem('Controlled Destruction Support', 18, 0, 33, 0, ["Spell", "Support"]);
+      $this->createItem('Curse On Hit Support', 38, 0, 63, 0, ["Curse", "Trigger", "Support"]);
+      $this->createItem('Decay Support', 38, 0, 40, 27, ["Chaos", "Support"]);
+      $this->createItem('Efficacy Support', 31, 0, 52, 0, ["Support", "Duration"]);
+      $this->createItem('Elemental Focus Support', 18, 0, 33, 0, ["Support"]);
+      $this->createItem('Elemental Proliferation Support', 1, 0, 0, 0, ["Cold", "Fire", "Lightning", "Support", "AoE"]);
+      $this->createItem('Enlighten Support', 1, 0, 0, 0, ["Support"]);
+      $this->createItem('Faster Casting Support', 18, 0, 33, 0, ["Support", "Spell"]);
+      $this->createItem('Ignite Proliferation Support', 38, 27, 40, 0, ["Fire", "Support", "AoE"]);
+      $this->createItem('Immolate Support', 38, 27, 40, 0, ["Fire", "Support"]);
+      $this->createItem('Increased Area of Effect Support', 38, 0, 63, 0, ["Support", "AoE"]);
+      $this->createItem('Increased Critical Damage Support', 18, 0, 33, 0, ["Support"]);
+      $this->createItem('Increased Critical Strikes Support', 8, 0, 18, 0, ["Support"]);
+      $this->createItem('Innervate Support', 31, 0, 52, 0, ["Lightning", "Support", "Duration"]);
+      $this->createItem('Item Rarity', 31, 0, 52, 0, ["Support"]);
+      $this->createItem('Lightning Penetration Support', 31, 0, 52, 0, ["Lightning", "Support"]);
+      $this->createItem('Minefield Support', 8, 0, 0, 0, ["Support", "Mine"]);
+      $this->createItem('Minion and Totem Elemental Resistance Support', 31, 23, 33, 0, ["Support", "Minion"]);
+      $this->createItem('Minion Damage Support', 8, 0, 18, 0, ["Support", "Minion"]);
+      $this->createItem('Minion Life Support', 18, 0, 33, 0, ["Support", "Minion"]);
+      $this->createItem('Minion Speed Support', 18, 0, 33, 0, ["Movement", "Support", "Minion"]);
+      $this->createItem('Physical to Lightning Support', 18, 14, 21, 0, ["Lightning", "Support"]);
+      $this->createItem('Power Charge On Critical Support', 8, 0, 33, 0, ["Support"]);
+      $this->createItem('Remote Mine Support', 8, 0, 0, 0, ["Support", "Mine", "Duration"]);
+      $this->createItem('Spell Cascade Support', 4, 0, 0, 0, ["AoE", "Spell", "Support"]);
+      $this->createItem('Spell Echo Support', 38, 0, 63, 0, ["Spell", "Support"]);
+      $this->createItem('Storm Barrier Support', 4, 0, 0, 0, ["Lightning", "Support", "Channelling"]);
+      $this->createItem('Unbound Ailments Support', 8, 0, 0, 0, ["Support"]);
+
+      /**
+      * Skipping Vaal Gems until I implement isCorrupted into Item-model
+      */
     }
 
     public function createItem($name, $req_level, $req_str, $req_int, $req_dex, $str_tags){
