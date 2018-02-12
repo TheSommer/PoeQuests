@@ -18,9 +18,11 @@ class CreateItemsTable extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('req_level');
-            $table->integer('req_str');
-            $table->integer('req_int');
-            $table->integer('req_dex');
+            $table->integer('req_str')->nullable();
+            $table->integer('req_int')->nullable();
+            $table->integer('req_dex')->nullable();
+            $table->integer('ilvl')->nullable();
+            $table->integer('rarity')->nullable();
             $table->timestamps();
         });
     }
