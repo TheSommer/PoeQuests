@@ -1,22 +1,18 @@
 @extends("layouts.main")
 @section("content")
 
-<table class="table">
-    <tr>
-        <th>Act</th>
-        <th>Order</th>
-        <th>Title</th>
-        <th>Created at</th>
-        <th>Updated at</th>
-    </tr>
-    
-    <tr>
-        <td>{{$quest->act}}</td>
-        <td>{{$quest->order}}</td>
-        <td>{{$quest->title}}</td>
-        <td>{{$quest->created_at}}</td>
-        <td>{{$quest->updated_at}}</td>
-    </tr>
-</table>
+<div class="row">
+  <div class="col-md-12">
+    <h1>{{ $quest->title }}</h1>
+    <div class="row">
+      @foreach($quest->getRewards() as $charRewards)
+
+      @component('components.quest', ['charRewards' => $charRewards])
+      @endcomponent
+
+      @endforeach
+    </div>
+  </div>
+</div>
 
 @endsection
