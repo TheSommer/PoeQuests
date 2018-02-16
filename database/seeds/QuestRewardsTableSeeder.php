@@ -21,6 +21,14 @@ class QuestRewardsTableSeeder extends Seeder
         $this->createQuestReward(1, 1, 5, ["Frost Blades", "Ice Shot", "Shrapnel Shot", "Split Arrow"]);
         $this->createQuestReward(1, 1, 6, ["Cleave", "Molten Strike", "Shrapnel Shot"]);
         $this->createQuestReward(1, 1, 7, ["Lightning Tendrils", "Molten Strike", "Split Arrow"]);
+
+        $this->createQuestReward(1, 2, 1, ["Book of Regrets +2"]);
+        $this->createQuestReward(1, 2, 2, ["Book of Regrets +2"]);
+        $this->createQuestReward(1, 2, 3, ["Book of Regrets +2"]);
+        $this->createQuestReward(1, 2, 4, ["Book of Regrets +2"]);
+        $this->createQuestReward(1, 2, 5, ["Book of Regrets +2"]);
+        $this->createQuestReward(1, 2, 6, ["Book of Regrets +2"]);
+        $this->createQuestReward(1, 2, 7, ["Book of Regrets +2"]);
     }
 
     /*
